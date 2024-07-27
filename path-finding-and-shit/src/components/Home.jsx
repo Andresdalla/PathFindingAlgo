@@ -1,14 +1,52 @@
 import React from 'react'
+import { HoverEffect } from "../components/ui/HoverEffect";
 
-const Home = () => {
+export function Home() {
   return (
-    <div name='home' className='w-full h-screen  bg-[#31363F]'>
-    <div className='max-w-[1000px] mx-auto flex flex-col
-       justify-center h-full'>
-
+    <div className="w-full h-screen bg-[#31363F]">
+      <div className=''>
+        <HoverEffect items={projects} />
+      </div>
     </div>
-  </div>
-  )
+  );
 }
 
-export default Home
+export const projects = [
+  {
+    title: "Dijkstra",
+    description:
+    "Bla Bla Bla,Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla  ",
+    link: "https://stripe.com",
+  },
+  {
+    title: "A*",
+    description:
+    "Bla Bla Bla,Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ",
+    link: "https://netflix.com",
+  },
+  {
+    title: "BFS",
+    description:
+    "Bla Bla Bla,Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ",
+    link: "https://google.com",
+  },
+  {
+    title: "DFS",
+    description:
+    "Bla Bla Bla,Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ",
+    link: "https://meta.com",
+  },
+  {
+    title: "Prim",
+    description:
+    "Bla Bla Bla,Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ",
+    link: "https://amazon.com",
+  },
+  {
+    title: "Kruskal",
+    description:
+      "Bla Bla Bla,Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla Bla ",
+      link: "https://microsoft.com",
+    },
+  ];
+  export default Home
